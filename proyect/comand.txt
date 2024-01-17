@@ -1,0 +1,39 @@
+django-admin startproject django_api
+
+python manage.py runserver
+ 
+python manage.py startapp chat
+
+pip install djangorestframework
+
+pip install django-cors-headers
+
+tablas models 
+usuario / password 
+
+rut / cesfam / sector 
+
+python manage.py makemigrations chat 
+python manage.py migrate chat
+
+pip install psycopg2
+psql 
+
+DATABASES = {
+   'default': {
+       'ENGINE': 'django.db.backends.postgresql',
+       'NAME': ‘chat’,
+       'USER': 'postgres',
+       'PASSWORD': '1234',
+       'HOST': 'localhost',
+       'PORT': '5432',
+   }
+}
+python manage.py makemigrations
+python manage.py migrate
+
+python manage.py createsuperuser
+
+import Button from 'react-bootstrap/Button';
+
+
